@@ -1,7 +1,11 @@
 module.exports = {
     name: 'ping',
-    description: "pings the bot and responds with annoying bullshit",
+    description: "Pings the bot and responds with annoying baby noises",
     execute(client, message, args){
+        //defining emotes for the ping
+        const coolbabyrobert = client.emojis.cache.get("824487161591889940");
+
+        //picking and saying the random phrase said
         var randomNumber = Math.floor((Math.random() * 5));
         if(randomNumber == 0){
             message.channel.send('BING BING BING BING BING BING <:coolbabyrobert:824487161591889940><:coolbabyrobert:824487161591889940><:coolbabyrobert:824487161591889940><:coolbabyrobert:824487161591889940><:coolbabyrobert:824487161591889940><:coolbabyrobert:824487161591889940>');

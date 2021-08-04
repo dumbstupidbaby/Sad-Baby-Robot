@@ -2,13 +2,14 @@ module.exports = {
     name: 'roll',
     description: "rolls from 1 to whatever number is given",
     execute(client, message, args){
-        //convents args to a number
+        
+        //convents args to a number and prints zero for zero case
         var argument = +(args);
-
-        //randomizes the number i hope
+        if (argument < 1){
+            return;
+        }
+        //randomizes the number and pritns it
         var randomNumber = Math.floor(Math.random() * argument) + 1;
-
-        //print the random number except IT FUCKIGN DOESN'T WHT
         if (randomNumber > 0){
             message.channel.send(randomNumber);
         } else return;
