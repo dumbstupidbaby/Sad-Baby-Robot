@@ -1,7 +1,7 @@
 module.exports = {
     name: 'roll',
     description: "rolls from 1 to whatever number is given",
-    execute(message, args){
+    execute(client, message, args){
         //convents args to a number
         var argument = +(args);
 

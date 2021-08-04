@@ -1,7 +1,7 @@
 module.exports = {
     name: 'ping',
     description: "pings the bot and responds with annoying bullshit",
-    execute(message, args){
+    execute(client, message, args){
         var randomNumber = Math.floor((Math.random() * 5));
         if(randomNumber == 0){
             message.channel.send('BING BING BING BING BING BING <:coolbabyrobert:824487161591889940><:coolbabyrobert:824487161591889940><:coolbabyrobert:824487161591889940><:coolbabyrobert:824487161591889940><:coolbabyrobert:824487161591889940><:coolbabyrobert:824487161591889940>');
