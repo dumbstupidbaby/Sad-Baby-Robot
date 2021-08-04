@@ -34,4 +34,5 @@ client.on('message', message =>{
     }
 });
 
-client.login('./secret/secret.txt');
+const bufferVariable = require('./secret/secret.js');
+client.login(bufferVariable);
