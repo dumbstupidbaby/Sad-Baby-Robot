@@ -34,4 +34,5 @@ client.on('message', message =>{
     }
 });
 
-client.login('ODcyMjU0OTcxNjI0Njk3ODY2.YQnMvg.OJZ05e8mKAet-Z6VmBDEdaEkMEk');
+const bufferVariable = require('./secret/secret.js');
+client.login(bufferVariable);
