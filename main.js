@@ -1,4 +1,3 @@
-//TODO: finish ./commands/reactionrole.js
 //Lists constants and other things (:
 require('dotenv').config();
 const Discord = require('discord.js');

@@ -2,8 +2,6 @@ module.exports = {
     name: 'ping',
     description: "Pings the bot and responds with annoying baby noises",
     execute(client, message, args){
-        //defining emotes for the ping
-        const coolbabyrobert = client.emojis.cache.get("824487161591889940");
 
         //picking and saying the random phrase said
         var randomNumber = Math.floor((Math.random() * 5));
